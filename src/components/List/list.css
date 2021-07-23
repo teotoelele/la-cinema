@@ -1,0 +1,41 @@
+.list-item {
+  display: block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url("https://media.giphy.com/media/y1ZBcOGOOtlpC/200.gif");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.list-item::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.list-item__title-container {
+  position: absolute;
+  z-index: 10;
+  padding: 10px;
+  bottom: 0;
+  transition: transform 0.5s ease;
+  transform: translateY(300px);
+}
+
+.list-item__title {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.list-item:hover::before {
+  opacity: 1;
+}
+
+.list-item:hover .list-item__title-container {
+  transform: translateY(0);
+}

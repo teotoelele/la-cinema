@@ -1,0 +1,40 @@
+.slider {
+  margin-bottom: 15px;
+}
+
+.slider .carousel-inner,
+.slider .carousel-item {
+  height: 190px;
+}
+
+.carousel-control-next {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  ) !important;
+}
+
+.carousel-control-prev {
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  ) !important;
+}
+
+@media (min-width: 768px) {
+  .slider .carousel-inner,
+  .slider .carousel-item {
+    height: 550px;
+  }
+}
+
+.slider__image {
+  display: block;
+  background-size: cover;
+  object-fit: scale-down;
+  background-position: 50% 50%;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+.navigation {
+}
+
+.navigation .navbar-brand {
+  color: white;
+}
+
+.navigation .nav-item {
+  margin-right: 15px;
+}
+
+.navigation .nav-item:last-of-type {
+  margin-right: 0;
+}
+
+.navigation .nav-item a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.navigation .nav-item a:hover {
+  text-decoration: none;
+}
