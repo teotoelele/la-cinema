@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Autosuggest from "react-autosuggest";
-import { API_KEY, URL_SEARCH, URL_COVER } from "../../const";
+import { API_KEY, URL_SEARCH } from "../../const";
 import "../../components/Search/search.css";
 
 function getSuggestionValue(suggestion) {
@@ -11,9 +11,6 @@ function getSuggestionValue(suggestion) {
 function renderSuggestion(suggestion) {
   return (
     <Link to={"/movie/" + suggestion.id} className="search-item">
-      {/* <div className="search-item__image-container">
-        <img className="img-fluid" key={suggestion.id} src={URL_COVER+suggestion.poster_path} alt="" />
-      </div> */}
       <div className="search-item__title-container">
         <span>{suggestion.title}</span>
       </div>

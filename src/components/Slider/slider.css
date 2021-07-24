@@ -30,6 +30,13 @@
   }
 }
 
+@media (max-width: 768px) {
+  .carousel-control-next .sr-only,
+  .carousel-control-prev .sr-only {
+    display: none;
+  }
+}
+
 .slider__image {
   display: block;
   background-size: cover;

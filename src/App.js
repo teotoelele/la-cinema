@@ -4,6 +4,7 @@ import Movie from "./containers/Movie.js";
 import Navigation from "./components/Navigation/Navigation.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/Footer/Footer.js";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
             <Navigation></Navigation>
             <Route exact path="/" component={LatestMovies} />
             <Route path="/movie/:id" component={Movie} />
+            <Footer></Footer>
           </div>
         </Router>
       </div>
