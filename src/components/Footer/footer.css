@@ -1,9 +1,13 @@
-p {
+.navigation {
+  margin-top: 30px;
+}
+
+.desc {
   color: #fff;
   margin: 0 auto;
 }
 
-a {
+.desc a {
   color: #fff;
   text-decoration: none;
 }

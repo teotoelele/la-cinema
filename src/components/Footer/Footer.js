@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <Navbar color="dark" dark expand="md" className="navigation">
         <Container>
-          <p>
+          <p className="desc">
             See <a href="https://github.com/tolend95/la-cinema">Repository</a>
           </p>
         </Container>
